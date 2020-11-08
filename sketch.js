@@ -15,10 +15,10 @@ var mangoArray, stemArray;
 engine: engine;
 
 function preload(){
-    boyImg = loadImage("Images/boy.png")
-    mangoImg = loadImage("Images/mango.png")
-    rockImg = loadImage("Images/stone.png")
-    treeImg = loadImage("Images/tree.png")
+    //boyImg = loadImage("Images/boy.png")
+    //mangoImg = loadImage("Images/mango.png")
+    //rockImg = loadImage("Images/stone.png")
+    //treeImg = loadImage("Images/tree.png")
 }
 
 function setup(){
