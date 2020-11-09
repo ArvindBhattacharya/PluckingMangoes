@@ -15,10 +15,10 @@ var mangoArray, stemArray;
 engine: engine;
 
 function preload(){
-    //boyImg = loadImage("Images/boy.png")
-    //mangoImg = loadImage("Images/mango.png")
-    //rockImg = loadImage("Images/stone.png")
-    //treeImg = loadImage("Images/tree.png")
+    boyImg = loadImage("boy.png")
+    mangoImg = loadImage("mango.png")
+    rockImg = loadImage("stone.png")
+    treeImg = loadImage("tree.png")
 }
 
 function setup(){
@@ -53,8 +53,8 @@ function draw(){
     background(255);
     Engine.update(engine);
     imageMode(CENTER)
-    //image(boyImg,120,450,160,300)
-    //image(treeImg,700,280,300,500)
+    image(boyImg,120,450,160,300)
+    image(treeImg,700,280,300,500)
     //console.log(mouseX+", "+mouseY)
     stone.display();
     mango1.display();
@@ -81,14 +81,14 @@ function draw(){
     {
       sling.fly();
     }
-    //image(rockImg,stone.body.position.x,stone.body.position.y,20,20)
+    image(rockImg,stone.body.position.x,stone.body.position.y,20,20)
     for(var mango in mangoArray){
-        //imageMode(CENTER);
-            //image(mangoImg,
-              //mangoArray[mango].body.position.x,
-              //mangoArray[mango].body.position.y,
-              //60,
-              //60)
+        imageMode(CENTER);
+            image(mangoImg,
+              mangoArray[mango].body.position.x,
+              mangoArray[mango].body.position.y,
+              60,
+              60)
         if(mangoArray[mango].body.speed > 2){
              stemArray[mango].sling.bodyA = null; 
         }
